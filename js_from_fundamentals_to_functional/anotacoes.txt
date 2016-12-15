@@ -1,5 +1,5 @@
 #########################################################
-Iteration
+ Iteração em objetos
 ##########################################################
 
 **** for in loops 
@@ -30,7 +30,7 @@ Iteration
 
 
 ##########################################################
-Igualdade em Javascript
+Igualdade em Objetos
 ##########################################################
 
     **** TRIPLE EQUAL
@@ -53,4 +53,31 @@ Igualdade em Javascript
     https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Igualdade
     
 
+##########################################################
+Arrays
+##########################################################
+
+    São conteiners, é uma data structure
+    Pode salvar qualquer tipo de dado
+    Pode ser ordenada
+    É um objeto
+    Por ser um objeto as regras de brackets notation, e dot notation e iteration são as mesmas
+
+    Algumas propriedades do Array:
+
+    ****unshift()
+    Adiciona o item no início do array
+
+    ****shift()
+    Remove o item do início do array
+
+    ****push()
+    Adiciona o item no final do array
+
+    ****pop()
+    Remove o item do final do array
+
+    Lista completa: http://www.w3schools.com/jsref/jsref_obj_array.asp
+
+   ===>  REVISAR.: Acho que fiquei um pouco confusa sobre o curso ter dito que acessar o array pelo indice, é o mesmo que acessar o objeto pelo nome da propriedade. Acho que preciso rever isto!
 
