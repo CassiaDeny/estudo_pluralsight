@@ -29,8 +29,28 @@ Iteration
     =====================================================================
 
 
+##########################################################
+Igualdade em Javascript
+##########################################################
+
+    **** TRIPLE EQUAL
+    O uso do triple equal é para uma comparação mais rigorosa (strict check), os tipos não são convertidos, e se forem diferentes (os tipos) o retorno é false, sem nem comparar o conteúdo
+    if ('1' == 1) // isto retorna true, pois ele converte o inteiro para string e faz a comparação comparação
+    
+    **** DOUBLE EQUAL
+    No caso do doble equal é para uma comparação mais branda, permissiva, nela os tipos são convertidos para um mesmo tipo e se o conteúdo for igual, o resultado é positivo .
+    Usar o double equals pode trazer resultados inesperados! Por isso a recomendação é usar sempre o triple
+    if ('1' === 1) // não tenta converter e como os tipos já são diferentes, o retorno é false
+
+    **** Object.is
+    Comportamento igual ao descrito no triplo equal, com diferença para tratamento de Nan e e -0 e +0
+    Object.is(Nan, Nan) // retorna true enquanto nas demais tipos de comparação retorna false
+    Object.is(-0, +0) // retorna false enquanto nas demais tipos de comparação retorna true
 
 
-
+    Todas as diferenças entre as comparações são aplicáveis somente para os tipos primitivos, para objetos mesmo sendo estruturalmente iguais e com conteúdo iguais serão objetos diferentes, pois têm referências diferentes em memória
+    
+    https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Igualdade
+    
 
 
