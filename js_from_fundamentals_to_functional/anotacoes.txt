@@ -57,11 +57,11 @@ Igualdade em Objetos
 Arrays
 ##########################################################
 
-    São conteiners, é uma data structure
-    Pode salvar qualquer tipo de dado
-    Pode ser ordenada
-    É um objeto
-    Por ser um objeto as regras de brackets notation, e dot notation e iteration são as mesmas
+    - São conteiners, é uma data structure
+    - Pode salvar qualquer tipo de dado
+    - Pode ser ordenada
+    - É um objeto
+    - Por ser um objeto as regras de brackets notation, e dot notation e iteration são as mesmas
 
     Algumas propriedades do Array:
 
@@ -80,4 +80,23 @@ Arrays
     Lista completa: http://www.w3schools.com/jsref/jsref_obj_array.asp
 
    ===>  REVISAR.: Acho que fiquei um pouco confusa sobre o curso ter dito que acessar o array pelo indice, é o mesmo que acessar o objeto pelo nome da propriedade. Acho que preciso rever isto!
+
+
+
+##########################################################
+Functions
+##########################################################
+
+    - São pequenos trechos de código para isolar uma operação ou um processamento (encapsulamento)
+    - Funções são objetos
+    - São objetos que fazem coisas
+    - É possível preencher uma variável com uma função
+    - É possível passá-las por parâmetro
+    - Pode ser dados e pode ser ação
+    - São unidades de abstração
+    - Funções são verbo e objetos são substantivos
+    - Tem escopo
+    - uma função pode ser anônima, isto é, sem nome
+    - Pode ter parâmetros informados entre ()
+    - 
 
