@@ -116,6 +116,8 @@ Nested data structure
     - Se você quiser acessar uma propriedade full dentro de innerBox, dentro de box: box['innerBox]['full'] = true ou box.innerBox.full = true
 
 
-
+##########################################################
+Scope
+##########################################################
 
 
