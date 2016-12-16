@@ -1,4 +1,20 @@
 //Use this file to implement Part One of your project
+
+//criando um construtor
+function AnimalMaker(name){
+    //o nome da função é declarada com a primeira letra em maiúsculo para indicar que se trata de um construtor
+
+    //para ser um construtor é necessário devolver um objeto
+    return {
+        speak: function(){
+            console.log("my name is ", name);
+        },
+        name:name,
+        owner:"Cassia"
+        
+    };
+}
+
 function objectsAsDataModels(){
 
     var animal = {};
@@ -44,4 +60,13 @@ function arraysAsCollections(){
     return noiseArray;
 }
 
-objectsAsDataModels();
+//objectsAsDataModels();
+
+//chamando o construtor
+var animals = ['cat', 'dog', 'turtle'];
+
+for(a in animals){
+    var name = animals[a];
+    var animal = AnimalMaker(name);   
+    animal.speak();
+}
