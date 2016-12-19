@@ -1,0 +1,22 @@
+##########################################################
+Local and global scope
+##########################################################
+
+    **** Escopo
+
+    Define onde podemos acessar as variáveis, como um lifetime da variável. Onde ela está disponível.
+    Quando uma variável está fora do escopo isto quer dizer que ela não existe naquele contexto.
+    Local onde a variável tem um significado, se tentarmos acessar uma variável fora do escopo, esta variável não existirá.
+    É criado dinâmicamente quando chamamos uma função.
+    As {} que delimitam uma função podem ser vistos como os limites de um escopo, embora no momento da declaração da função este escopo não está criado. Isso se dá dinâmicamente quando a função for chamda
+    Outras estruturas que também utilizam {} como While, for, if ou blocos não criam escopo como nas funções, então uma variável declarada dentro de um if é acessível fora dele 
+
+    **** Escopo Local
+    Quando uma variável é declarada dentro de uma função, ela é privada, e isso é chamado de escopo local.
+    Ela somente pode ser acessada dentro da função em que foi declarada
+
+    **** Escopo global
+    No contexto de escopo global, a variável é declarada de forma que pode ser acessada por toda a aplicação.
+    Para criar uma variável de escopo global basta criá-la fora de uma função.
+    Pode ser muito perigoso ter nomes iguais de variáveis, pois o conteúdo desta variável pode ficar inconsistente.
+    
