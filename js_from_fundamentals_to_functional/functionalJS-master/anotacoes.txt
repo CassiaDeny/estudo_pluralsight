@@ -27,6 +27,8 @@ Local and global scope
     O "escopo pai" não tem acesso ao "escopo filho", isto é, se uma função declara uma segunda função, essa primeira função não tem acesso ao conteúdo das variáveis declaradas dentro da segunda função
 
     **** Procedence
+    Quando temos variáveis com o mesmo nome em escopo aninhado, o que foi preenchido dentro do escopo filho ficará apenas dentro do escopo filho, nesta situação se você olhar para o valor desta variável fora do escopo filho, ela ainda terá o mesmo valor que foi declarado no escopo global, isto é, a alteração realizada dentro do escopo filho não é acessível.
+    Tudo que está dentro de {} e que não for a declaração de um objeto, é considerado dentro de um bloco. O bloco é definido pelos {}
     
 
 
