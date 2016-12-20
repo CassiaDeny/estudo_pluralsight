@@ -43,5 +43,13 @@ Closure
     Para executar uma closure, criamos uma variável que receberá o retorno da função pai criada anteriormente, e então usamos o () na variável que recebeu o retorno da função pai, neste momento estaremos chamando (executando) a função filha que foi retornada
     
 
+##########################################################
+Callbacks
+##########################################################    
 
+    **** Module Pattern
+    Uma forma de modularizar o código e criar estruturas de classe em Javascript, apis (uma interface com os dados), de maneira a ter propriedades e métodos privados, mas que retorna um objeto com métodos e propriedades públicas
     
+    **** Higher Order Functions
+    Receber uma função como argumento (input) ou retornar uma função (output) 
+
