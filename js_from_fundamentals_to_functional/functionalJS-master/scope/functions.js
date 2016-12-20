@@ -157,10 +157,8 @@
           };
 
           innerIncrementingFn();
-           console.log("valor de counter " + counterInOuterScope);
           expect(ACTUAL === 11).to.be.true;
           innerIncrementingFn();
-           console.log("valor de counter " + counterInOuterScope);
           expect(ACTUAL === 12).to.be.true;
           // Here, we retain a reference to the newly created inner function for later, by assigning it to the global scope (window)
           window.retainedInnerFn = innerIncrementingFn;
@@ -168,13 +166,14 @@
 
         // before we run outerFn, there will be no innerFn exported to the global scope
         expect(window.retainedInnerFn).to.equal.undefined;
-        console.log("final do teste " +  window.retainedInnerFn)
+
         // running this outer function should have the same effect as running the whole previous test, with the addition of placing the innerFn somewhere that we can reach it after outerFn has returned
         outerFn();
         expect(window.retainedInnerFn).to.be.a('function');
+
         // even though the outerFn has returned once the only call to it was completed a couple of lines above, the inner function remains available in the global scope, and still has access to the variables of that containing scope where it was first created.
         window.retainedInnerFn();
-        expect(ACTUAL === '???').to.be.true;
+        expect(ACTUAL === 13).to.be.true;
       });
 
   });

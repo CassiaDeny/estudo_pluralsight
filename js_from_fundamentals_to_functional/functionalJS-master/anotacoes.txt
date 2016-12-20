@@ -30,6 +30,18 @@ Local and global scope
     Quando temos variáveis com o mesmo nome em escopo aninhado, o que foi preenchido dentro do escopo filho ficará apenas dentro do escopo filho, nesta situação se você olhar para o valor desta variável fora do escopo filho, ela ainda terá o mesmo valor que foi declarado no escopo global, isto é, a alteração realizada dentro do escopo filho não é acessível.
     Tudo que está dentro de {} e que não for a declaração de um objeto, é considerado dentro de um bloco. O bloco é definido pelos {}
     
+##########################################################
+Closure
+##########################################################
+
+    **** Introdução
+    É o próximo passo do escopo
+    Uma closure acontece quando se retorna uma função dentro de outra função
+    Closure é a função que pode ser chamada depois. Ao retornar uma função, vc pode armazená-la dentro de uma variável e executá-la posteriormente.
+    Ao armazenar uma função em uma variável e depois executá-la mais de uma vez, o escopo criado na primeira execução é mantido. Logo se vc estiver fazendo um cálculo, as variáveis declaradas dentro da função não serão zeradas, pois como o escopo se manteve, os valores delas são os mesmos da ultima execução, logo uma nova execução realizará novos calculos com as variáveis tendo os valores da execução anterior. 
+    Para se criar uma closure, primeiramente, se cria a função pai, definimos algumas variáveis na função pai, e então, colocamos um função filha (inner function), dentro do pai e retornamos esta função sem executá-la, isto é, sem os ()
+    Para executar uma closure, criamos uma variável que receberá o retorno da função pai criada anteriormente, e então usamos o () na variável que recebeu o retorno da função pai, neste momento estaremos chamando (executando) a função filha que foi retornada
+    
 
 
     

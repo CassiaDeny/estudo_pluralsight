@@ -19,32 +19,7 @@ var definicaoDeEscopo = function (){
 
 }
 
-var iniciaExemploEscopo = function (){
-
 definicaoDeEscopo();
 var escopo_global = "escopo_global=> Esta variável tem escopo global pois foi declarada fora da função";
 console.log(escopo_global2);
-//console.log(funcao_tem_escopo); // isso da erro pq aqui a variável não existe     
-}
-
-var g = 1;
-
-function procedencia(){
-    
-    var l = "local";
-    var g = 2;
-    filha();
-
-    function filha (){
-        var g = 3;
-
-        console.log(g + " dentro da filha"); 
-    }
-    
-    console.log(g + " dentro da função");
-   
-}
-
-console.log(g + " fora da função");
-
-procedencia();
+//console.log(funcao_tem_escopo); // isso da erro pq aqui a variável não existe  
