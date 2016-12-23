@@ -95,7 +95,17 @@ Tanto as funções quanto os blocos em JavaScript são definidos pelo uso de {},
 
 ### **Constructors**
 
-* Existe a convensão de usar a primeir letra do nome da função que será definida como contrutor em maiúsculo (Initial Caps) e nada mais deve ser iniciado com maiúsculo, exatamente para deixar bem evidente que se trata de um construtor
+* Existe a convenção de usar a primeira letra do nome da função que será definida como contrutor em maiúsculo (Initial Caps) e nada mais deve ser iniciado com maiúsculo, exatamente para deixar bem evidente que se trata de um construtor
+
+### "++"
+
+* A utilização do ++ pode ter dois resultados, o que pode deixar o código pouco claro. Sendo assim, recomenda-se usar x += 1.
+* O **pos-increment** (x++) indica que a variável x será usada com o valor atual e posteriomente será incrementada.
+* Já o **pre-increment** (++x) indica que a variável será incrementada antes de ser utilizada, sendo assim ela será incrementada imediatamente.
+
+
+
+
  
 
 
