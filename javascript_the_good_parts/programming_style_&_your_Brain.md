@@ -1,4 +1,4 @@
-# **Programming Style & Your Brain**
+# **Programming Style & Your Brain** by Douglas Crockford
 
 ## JSLint
 
@@ -93,6 +93,11 @@ Tanto as funções quanto os blocos em JavaScript são definidos pelo uso de {},
 * Ao criar uma variável sem o uso das palavras "var" ou "let", o JavaScrip subentende que isto se trata de uma variável global
 
 
+### Variáveis globais
+
+  * É recomendado a utilização de UPPER_CASE para variáveis globais. 
+
+
 ### **Constructors**
 
 * Existe a convenção de usar a primeira letra do nome da função que será definida como contrutor em maiúsculo (Initial Caps) e nada mais deve ser iniciado com maiúsculo, exatamente para deixar bem evidente que se trata de um construtor
@@ -102,7 +107,6 @@ Tanto as funções quanto os blocos em JavaScript são definidos pelo uso de {},
 * A utilização do ++ pode ter dois resultados, o que pode deixar o código pouco claro. Sendo assim, recomenda-se usar x += 1.
 * O **pos-increment** (x++) indica que a variável x será usada com o valor atual e posteriomente será incrementada.
 * Já o **pre-increment** (++x) indica que a variável será incrementada antes de ser utilizada, sendo assim ela será incrementada imediatamente.
-
 
 
 
