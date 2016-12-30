@@ -119,8 +119,8 @@ var revocable = function(func){
     };
 }
 
-//var temp = revocable(console.log);
-//temp.invoke(7);
-//temp.revoke();
-//temp.invoke(8);
+var temp = revocable(console.log);
+temp.invoke(7);
+temp.revoke();
+temp.invoke(8);
 
