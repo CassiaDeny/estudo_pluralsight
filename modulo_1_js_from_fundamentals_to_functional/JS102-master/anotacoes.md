@@ -6,8 +6,7 @@
 
 * Objetos podem acessar suas propriedades de duas formas: **Bracket Notation** e **Dot Notation**, sendo respectivamente:
 
-    ´´´
-
+   ```
     var pessoa = {
         nome: "Cassia",
         sobrenome: "Moreira",
@@ -20,8 +19,7 @@
     //Bracket Notation
     console.log(pessoa["nome"]);
 
-
-    ´´´
+    ```
 
 * **Brackets Notation**: Quando usamos este tipo de notação, os nomes das propriedades devem ser colocadas como strings, isto é, utilizando o "", pois na verdade dentro do objeto os nomas das propriedades são tratadas como strings sempre.;
 * **Dot Notation** : Já para a Dot Notation, não é necessário stringficar o nome da variável, pq internamente isto já acontece;
@@ -36,8 +34,7 @@
 
 Exemplo:
 
-´´´
-
+```
     var box = {};
 
     box['material'] = 'cardboard'; //criando a propriedade no objeto usando a bracket notation
@@ -59,8 +56,7 @@ Exemplo:
 
     }
 
-
-´´´
+```
 
 * Quando vamos acessar uma propriedade através do loop, a variável que recebe o nome da propriedade somente poderá ser utilizada com a Bracket Notation, pois ela é uma string, se tentarmos usa-la na Dot Notation, o nome "Key" será stringficado, isto é, será procurado uma propriedade chamada "key" em vez do valor contido dentro da string key.
 
@@ -74,33 +70,33 @@ Exemplo:
 
 * O uso do triple equal é para uma comparação mais rigorosa (strict check), os tipos não são convertidos, e se forem diferentes (os tipos) o retorno é false, sem nem comparar o conteúdo
   
-    ´´´
+```
     
     if ('1' == 1) // isto retorna true, pois ele converte o inteiro para string e faz a comparação comparação
     
-    ´´´
+```
 
 **Double Equal**
 
 * No caso do doble equal é para uma comparação mais branda, permissiva, nela os tipos são convertidos para um mesmo tipo e se o conteúdo for igual, o resultado é positivo;
 * Usar o double equals pode trazer resultados inesperados! Por isso a recomendação é usar sempre o triple;
 
-    ´´´
+```
 
     if ('1' === 1) // não tenta converter e como os tipos já são diferentes, o retorno é false
     
-    ´´´
+```
 
 **Object.is**
 
 * Comportamento igual ao descrito no triplo equal, com diferença para tratamento de **Nan** e **-0** e **+0**;
 
-´´´
+```
 
 Object.is(Nan, Nan) // retorna true enquanto nas demais tipos de comparação retorna false
 Object.is(-0, +0) // retorna false enquanto nas demais tipos de comparação retorna true
 
-´´´
+```
 
 Link de referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Igualdade
 
@@ -148,20 +144,20 @@ Como funcionam:
 
 ## Nested data structure
 
-´´´
+```
 var box = { 
     "innerBox": { 
         full: true
     }}
 
 
-´´´
+```
 
 * Lidamos muito no dia a dia com o formato de JSON
 * Se você quiser acessar uma propriedade full dentro de innerBox, dentro de box:
 
-´´´
+```
     box['innerBox]['full'] = true;
     box.innerBox.full = true
 
-´´´
+```
