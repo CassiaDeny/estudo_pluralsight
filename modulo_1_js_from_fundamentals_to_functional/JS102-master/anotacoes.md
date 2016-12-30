@@ -7,17 +7,19 @@
 * Objetos podem acessar suas propriedades de duas formas: **Bracket Notation** e **Dot Notation**, sendo respectivamente:
 
     ´´´
-        var pessoa = {
-            nome: "Cassia",
-            sobrenome: "Moreira",
-            CPF: "326.667.068-00"
-        }
 
-        //Dot Notation:
-        console.log(pessoa.nome);
+    var pessoa = {
+        nome: "Cassia",
+        sobrenome: "Moreira",
+        CPF: "326.667.068-00"
+    }
 
-        //Bracket Notation
-        console.log(pessoa["nome"]);
+    //Dot Notation:
+    console.log(pessoa.nome);
+
+    //Bracket Notation
+    console.log(pessoa["nome"]);
+
 
     ´´´
 
