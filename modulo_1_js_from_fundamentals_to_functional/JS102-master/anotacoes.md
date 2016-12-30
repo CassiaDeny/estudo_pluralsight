@@ -1,3 +1,5 @@
+[Estudo sobre JavaScript](/anotacoes.md)
+
 # **JavaScript: From Fundamentals to Functional JS** by Bianca Gandolfo
 
 ## Objetos
@@ -52,7 +54,7 @@ Exemplo:
         //ele procurará dentro do objeto por uma propriedade chamada "key" 
         //e não pela propriedade com o mesmo nome do conteúdo dentro da variável key
         console.log(box.key); 
-        
+
     }
 
 
