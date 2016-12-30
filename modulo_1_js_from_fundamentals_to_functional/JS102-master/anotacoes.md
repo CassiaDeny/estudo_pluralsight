@@ -33,6 +33,7 @@
 Exemplo:
 
 ´´´
+
     var box = {};
 
     box['material'] = 'cardboard'; //criando a propriedade no objeto usando a bracket notation
@@ -41,10 +42,19 @@ Exemplo:
         
     for(var key in box){
 
-        console.log(key); //aqui será exibido o nome da propriedade do objeto e não seu conteúdo
-        console.log(box[key]); // para acessar o valor da propriedade é necessário utilizar o bracket notation
-        console.log(box.key); //retornará undefined porque no caso de dotnotation, ele procurará dentro do objeto por uma propriedade chamada "key" e não pela propriedade com o mesmo nome do conteúdo dentro da variável key
+        //aqui será exibido o nome da propriedade do objeto e não seu conteúdo
+        console.log(key); 
+
+        // para acessar o valor da propriedade é necessário utilizar o bracket notation
+        console.log(box[key]); 
+
+        //retornará undefined porque no caso de dot notation, 
+        //ele procurará dentro do objeto por uma propriedade chamada "key" 
+        //e não pela propriedade com o mesmo nome do conteúdo dentro da variável key
+        console.log(box.key); 
+        
     }
+
 
 ´´´
 
