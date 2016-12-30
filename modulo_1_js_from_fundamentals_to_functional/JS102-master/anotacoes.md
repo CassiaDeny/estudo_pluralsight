@@ -100,8 +100,8 @@ Object.is(-0, +0) // retorna false enquanto nas demais tipos de comparação ret
 
 Link de referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Igualdade
 
-![comparacoes](img/img1.png) 
-![comparacoes](img/img2.png)
+![comparacoes](imgs/img1.png) 
+![comparacoes](imgs/img2.png)
     
 ### Arrays
 

@@ -65,7 +65,6 @@ _______________________________
 * Falsy values : false, null, undefined, "", 0, NaN. Todos os outros valores indicarão truthy, inclusive "0" e "false".
 * Objetos são passados por referência, isto é, nunca são copiados, apenas cria-se um ponteiro em memória que aponta para o mesmo objeto
 
-
 _______________________________
 
 ## Common JavaScript Statements
