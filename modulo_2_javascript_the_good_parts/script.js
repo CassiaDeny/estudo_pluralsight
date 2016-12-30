@@ -124,19 +124,25 @@ var revocable = function(func){
 //temp.revoke();
 //temp.invoke(8);
 
+function constru(nome) {
 
-var pessoa = {
-            nome: "Cassia",
-            sobrenome: "Moreira",
-            CPF: "326.667.068-00",
-            0: "teste"
-        }
+    this.teste = "Isto é um teste";
+    this.teste2 = "Isto é um teste 2";
 
-        //Dot Notation:
-        console.log("Dot " + pessoa.nome);
+    this.testeFunc =  function(){
+        return console.log("bla");
+    }
+}
 
-        //Bracket Notation
-        console.log("Bracket " + pessoa["nome"]);
+var cat = new constru('Livros');
+console.log("Chamado como construtor");
+console.log(typeof(cat));
+console.log(cat);
 
-        console.log("Zero " + pessoa[0] );       
+console.log("======================");
 
+console.log("Chamado como função");
+var cat2 = constru('cadernos');
+console.log("literal " + typeof(cat2));
+console.log("literal " + cat2);  
+console.log(global.testeFunc());

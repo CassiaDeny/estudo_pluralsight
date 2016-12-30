@@ -75,7 +75,9 @@ Exemplo:
 * O uso do triple equal é para uma comparação mais rigorosa (strict check), os tipos não são convertidos, e se forem diferentes (os tipos) o retorno é false, sem nem comparar o conteúdo
   
     ´´´
+    
     if ('1' == 1) // isto retorna true, pois ele converte o inteiro para string e faz a comparação comparação
+    
     ´´´
 
 **Double Equal**
@@ -84,7 +86,9 @@ Exemplo:
 * Usar o double equals pode trazer resultados inesperados! Por isso a recomendação é usar sempre o triple;
 
     ´´´
+
     if ('1' === 1) // não tenta converter e como os tipos já são diferentes, o retorno é false
+    
     ´´´
 
 **Object.is**
@@ -92,8 +96,10 @@ Exemplo:
 * Comportamento igual ao descrito no triplo equal, com diferença para tratamento de **Nan** e **-0** e **+0**;
 
 ´´´
+
 Object.is(Nan, Nan) // retorna true enquanto nas demais tipos de comparação retorna false
 Object.is(-0, +0) // retorna false enquanto nas demais tipos de comparação retorna true
+
 ´´´
 
 Link de referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Igualdade
@@ -101,72 +107,61 @@ Link de referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Gui
 ![comparacoes](img/img1.png) 
 ![comparacoes](img/img2.png)
     
+### Arrays
 
-##########################################################
-Arrays
-##########################################################
+* São conteiners, é uma data structure;
+* Pode armazenar qualquer tipo de dado;
+* Pode ser ordenado;
+* Por ser um objeto, as regras de brackets notation, e dot notation e iteration são as mesmas;
 
-    - São conteiners, é uma data structure
-    - Pode salvar qualquer tipo de dado
-    - Pode ser ordenada
-    - É um objeto
-    - Por ser um objeto as regras de brackets notation, e dot notation e iteration são as mesmas
+Algumas propriedades do Array:
 
-    Algumas propriedades do Array:
+**unshift()** : Adiciona o item no início do array;
+**shift()**: Remove o item do início do array;
+**push()**: Adiciona o item no final do array;
+**pop()**: Remove o item do final do array;
 
-    ****unshift()
-    Adiciona o item no início do array
+Lista completa: http://www.w3schools.com/jsref/jsref_obj_array.asp
 
-    ****shift()
-    Remove o item do início do array
+===>  REVISAR.: Acho que fiquei um pouco confusa sobre o curso ter dito que acessar o array pelo indice, é o mesmo que acessar o objeto pelo nome da propriedade. Acho que preciso rever isto!
 
-    ****push()
-    Adiciona o item no final do array
+## Functions
 
-    ****pop()
-    Remove o item do final do array
+O que são:
 
-    Lista completa: http://www.w3schools.com/jsref/jsref_obj_array.asp
+* São pequenos trechos de código para isolar uma operação ou um processamento (encapsulamento);
+* São objetos que podem conter dados e fazem coisas;
+* São unidades de abstração;
 
-   ===>  REVISAR.: Acho que fiquei um pouco confusa sobre o curso ter dito que acessar o array pelo indice, é o mesmo que acessar o objeto pelo nome da propriedade. Acho que preciso rever isto!
+Como funcionam:
 
-##########################################################
-Functions
-##########################################################
+* Por ser um objeto, é possível atribuir uma função à uma variável e também é possível passa-la por parâmetro (tanto atribuída em uma variável quanto declarada direto no local do parâmetro);
+* Pode receber parâmetros informados entre (). Os parâmetros são variáveis, que no momento da declaração da função estão vazias, e no momento da chamada da função, o preenchimento destes valore são chamados de atributos;
+* O corpo da função somente é executado com a chamada da função;
+* Toda função gera um retorno, e este retorno pode ser explicitado com a palavra chave "return". Ao indicar return e mais alguma valor, esse valor será devolvido para quem chamou a função, caso o return estiver sozinho ou não seja declarado, quem chamou a função recebera "undefined", somente em caso de um Construtor o que será retornado por default será um objeto que representa esta função;
+* Apesar de uma função ter ou não um conjunto de parâmetros definidos em sua declaração, eles podem não ser respeitados, e isto não irá gerear um erro de sintaxe. Por isto, é possível utilizar o objeto "arguments" para validar se a função recebeu mais ou menos parâmetros do que foi indicado em sua declaração. Este objeto "arguments" é como um array mas não é um, então não tem todas as características de um array;
+* Caso um parâmetro seja indicado na declaração e não seja atribuido, essa parâmetro será "undefined";
 
-    - São pequenos trechos de código para isolar uma operação ou um processamento (encapsulamento)
-    - Funções são objetos
-    - São objetos que fazem coisas
-    - É possível preencher uma variável com uma função
-    - É possível passá-las por parâmetro
-    - Pode ser dados e pode ser ação
-    - São unidades de abstração
-    - Funções são verbo e objetos são substantivos
-    - Tem escopo
-    - uma função pode ser anônima, isto é, sem nome
-    - Pode receber parâmetros informados entre ()
-    - O corpo da fuunção somente é executado com a chamada da função
-    - Funções podem ser chamadas / invocadas
-    - Na declaração da função temos os parãmetros, que são variáveis que estão vazias, quando você chama a função e passa valores para estes parâmetros, isto é chamado de argumentos. Os argumentos são os valores dos parâmetros no momento da chamada da função.
-    - Se uma função não declara o seu retorno, então ele será undefined
-    - funções tem retornos, quando um return é explicitado ou tem side efects, quando nenhum retorno é dado
-    - É possível saber o conjunto de argumentos enviados para a função (o javascript aceita enviar mais argumentos do que a quantidade de parâmetros declarados na função) através da palavra chave "arguments". Um console.log(arguments) exibi um objeto com todos os valores recebidos
-    - Podemos usar uma função como um Construtor, para isto, precisamos declarar o nome da função com a primeira letra em maiúsculo para indicar aos outros desenvolvedores que esta se trata de um construtor. Um construtor é uma função que retorna um objeto
+* **Criam escopo**, isto é, espaço onde, o que está dentro dela somente é visível alí dentro, nada exterior pode ter acesso ao que está dentro de uma função;
+* **Função Anônima** : Uma função declarada sem ter um nome;
+* **Construtor** : funções podem ser declaradas para ser um construtor, para identificar isto, utilizamos por convenção a primeira letra do nome da função em MAIÚSCULO. É o único caso que teremos funções com a primeira letra em maiúsculo;  
+
+## Nested data structure
+
+´´´
+var box = { 
+    "innerBox": { 
+        full: true
+    }}
 
 
+´´´
 
-##########################################################
-Nested data structure 
-##########################################################
-    
-    ex.: var box = { "innerBox": { full: true}}
+* Lidamos muito no dia a dia com o formato de JSON
+* Se você quiser acessar uma propriedade full dentro de innerBox, dentro de box:
 
-    - Lidamos muito no dia a dia com o formato de JSON
-    - Se você quiser acessar uma propriedade full dentro de innerBox, dentro de box: box['innerBox]['full'] = true ou box.innerBox.full = true
+´´´
+    box['innerBox]['full'] = true;
+    box.innerBox.full = true
 
-
-##########################################################
-Scope
-##########################################################
-
-
+´´´
