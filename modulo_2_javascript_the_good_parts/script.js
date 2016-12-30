@@ -119,8 +119,24 @@ var revocable = function(func){
     };
 }
 
-var temp = revocable(console.log);
-temp.invoke(7);
-temp.revoke();
-temp.invoke(8);
+//var temp = revocable(console.log);
+//temp.invoke(7);
+//temp.revoke();
+//temp.invoke(8);
+
+
+var pessoa = {
+            nome: "Cassia",
+            sobrenome: "Moreira",
+            CPF: "326.667.068-00",
+            0: "teste"
+        }
+
+        //Dot Notation:
+        console.log("Dot " + pessoa.nome);
+
+        //Bracket Notation
+        console.log("Bracket " + pessoa["nome"]);
+
+        console.log("Zero " + pessoa[0] );       
 
